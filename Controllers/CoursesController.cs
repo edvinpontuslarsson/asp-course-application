@@ -10,7 +10,7 @@ namespace CourseApplication.Controllers
         [HttpGet]
         public string GetCourses()
         {
-            return "{}";
+            return System.IO.File.ReadAllText(@"courses.json");
         }
     }
 }
